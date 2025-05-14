@@ -1,0 +1,48 @@
+{
+    "version": "2.0.0",
+    "command": "cmd",
+    "isShellCommand": true,
+    "showOutput": "always",
+    "echoCommand": true,
+    "suppressTaskName": true,
+    "args": [
+        "/C"
+    ],
+    "tasks": [
+        {
+            "label": "Assemble Source",
+            "type": "shell",
+            "windows": {
+                "command": "java -cp .\\Tools\\Kick\\KickAss_5.25.jar kickass.KickAssembler ${fileBasenameNoExtension}.asm -odir .\\bin -o .\\bin\\Program.prg",
+                "console": "externalTerminal",
+            },
+            "linux": {
+                "command": "java -cp ./Tools/Kick/KickAss_5.25.jar kickass.KickAssembler ${fileBasenameNoExtension}.asm -odir ./bin  -o ./bin/Program.prg"
+            },
+            "osx": {
+                "command": "java -cp ./Tools/Kick/KickAss_5.25.jar kickass.KickAssembler ${fileBasenameNoExtension}.asm -odir ./bin  -o ./bin/Program.prg"
+            }
+        },
+        {
+            "label": "Launch Emulator",
+            "type": "shell",
+            "windows": {
+                "command": ".\\Tools\\X16\\Win-x64\\x16emu.exe -prg \".\\bin\\Program.prg\" -run -scale 2 -debug -keymap en-gb -joy1"
+            },
+            "linux": {
+                "command": "./Tools/X16/Linux-x64/ca6502Debugger ./bin/Program.prg -run -scale 2 -debug -keymap en-gb -joy1"
+            },
+            "osx": {
+                "command": "./Tools/X16/OSX-arm64/ca6502Debugger ./bin/Program.prg -run -scale 2 -debug -keymap en-gb -joy1"
+            },
+            "dependsOn": [
+                "Assemble Source"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+   ]
+}
