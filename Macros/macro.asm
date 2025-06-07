@@ -1,7 +1,7 @@
 // macro files
 .cpu _65c02
 #importonce
-#import "..\\Libraries\\constants.asm"
+#import "../Libraries/constants.asm"
 
 //veraAddr: .byte 0,0,0,0
 

@@ -1,7 +1,7 @@
 .cpu _65c02
-#import "Libraries\\constants.asm"
-#import "Libraries\\petscii.asm"
-#import "Macros\\macro.asm"
+#import "Libraries/constants.asm"
+#import "Libraries/petscii.asm"
+#import "Macros/macro.asm"
 
 BasicUpstart2(Main)
 
@@ -84,5 +84,5 @@ UpdateSpriteLocation:
     SpriteFrameAddr: .word $8000 >> 5
 
 Sprites:
-#import "Assets\\ManicMinerWalking.asm"
+#import "Assets/ManicMinerWalking.asm"
 _Sprites:

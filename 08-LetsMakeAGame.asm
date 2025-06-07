@@ -1,8 +1,8 @@
 .cpu _65c02
-#import "Libraries\\constants.asm"
-#import "Libraries\\petscii.asm"
-#import "Macros\\macro.asm"
-#import "gameLibrary\\gameConstants.asm"
+#import "Libraries/constants.asm"
+#import "Libraries/petscii.asm"
+#import "Macros/macro.asm"
+#import "gameLibrary/gameConstants.asm"
 
 #define Step01
 #define Step08
@@ -793,21 +793,21 @@ Exit:
         bra !NextOnePlease-
     }
 
-#import "gameLibrary\\gameConstants.asm"
-#import "gameLibrary\\gameElements.asm"
-#import "gameLibrary\\gameSprites.asm"
-#import "gameLibrary\\gameScoring.asm"
-#import "Libraries\\controls.asm"
+#import "gameLibrary/gameConstants.asm"
+#import "gameLibrary/gameElements.asm"
+#import "gameLibrary/gameSprites.asm"
+#import "gameLibrary/gameScoring.asm"
+#import "Libraries/controls.asm"
 
 
 spriteAssets:
-#import "gameLibrary\\spriteAssets.asm"
+#import "gameLibrary/spriteAssets.asm"
 _spriteAssets:
 
 spriteNumberAssets:
-#import "gameLibrary\\spriteNumbers.asm"
+#import "gameLibrary/spriteNumbers.asm"
 _spriteNumberAssets:
 
 Characters:
-#import "Assets\\data.asm"
+#import "Assets/data.asm"
 _Characters:

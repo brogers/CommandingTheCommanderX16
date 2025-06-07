@@ -1,7 +1,7 @@
 .cpu _65c02
-#import "Libraries\\constants.asm"
-#import "Libraries\\petscii.asm"
-#import "Macros\\macro.asm"
+#import "Libraries/constants.asm"
+#import "Libraries/petscii.asm"
+#import "Macros/macro.asm"
 
 BasicUpstart2(Main)
 
@@ -18,6 +18,6 @@ Main:
     jmp *               // stop execution
 
 Characters:
-#import "Assets\\data.asm"
-//#import "Assets\\gothic.asm"
+#import "Assets/data.asm"
+//#import "Assets/gothic.asm"
 _Characters:

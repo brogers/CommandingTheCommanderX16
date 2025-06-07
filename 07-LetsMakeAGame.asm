@@ -1,7 +1,7 @@
 .cpu _65c02
-#import "Libraries\\constants.asm"
-#import "Libraries\\petscii.asm"
-#import "Macros\\macro.asm"
+#import "Libraries/constants.asm"
+#import "Libraries/petscii.asm"
+#import "Macros/macro.asm"
 
 BasicUpstart2(Main)
 
@@ -143,7 +143,7 @@ MainLoop:
         }
     }
 
-#import "gameLibrary\\gameConstants.asm"
-#import "gameLibrary\\gameElements.asm"
-#import "gameLibrary\\gameSprites.asm"
-#import "Libraries\\controls.asm"
+#import "gameLibrary/gameConstants.asm"
+#import "gameLibrary/gameElements.asm"
+#import "gameLibrary/gameSprites.asm"
+#import "Libraries/controls.asm"
