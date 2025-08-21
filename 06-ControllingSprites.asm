@@ -121,4 +121,4 @@ Sprites:
 #import "Assets/ManicMinerWalking.asm"
 _Sprites:
 
-#import "Libraries\controls.asm"
+#import "Libraries/controls.asm"
