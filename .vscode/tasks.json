@@ -13,14 +13,14 @@
             "label": "Assemble Source",
             "type": "shell",
             "windows": {
-                "command": "java -cp .\\Tools\\Kick\\KickAss_5.25.jar kickass.KickAssembler ${fileBasenameNoExtension}.asm -odir .\\bin -o .\\bin\\Program.prg",
+                "command": "java -cp .\\Tools\\Kick\\KickAss_5.25.jar kickass.KickAssembler ${fileBasenameNoExtension}.asm -libdir Libraries -libdir Macros -libdir gameLibrary -libdir Assets -odir .\\bin -o .\\bin\\Program.prg",
                 "console": "externalTerminal",
             },
             "linux": {
-                "command": "java -cp ./Tools/Kick/KickAss_5.25.jar kickass.KickAssembler ${fileBasenameNoExtension}.asm -odir ./bin  -o ./bin/Program.prg"
+                "command": "java -cp ./Tools/Kick/KickAss_5.25.jar kickass.KickAssembler ${fileBasenameNoExtension}.asm -libdir Libraries -libdir Macros -libdir gameLibrary -libdir Assets -odir ./bin  -o ./bin/Program.prg"
             },
             "osx": {
-                "command": "java -cp ./Tools/Kick/KickAss_5.25.jar kickass.KickAssembler ${fileBasenameNoExtension}.asm -odir ./bin  -o ./bin/Program.prg"
+                "command": "java -cp ./Tools/Kick/KickAss_5.25.jar kickass.KickAssembler ${fileBasenameNoExtension}.asm -libdir Libraries -libdir Macros -libdir gameLibrary -libdir Assets -odir ./bin  -o ./bin/Program.prg"
             }
         },
         {
