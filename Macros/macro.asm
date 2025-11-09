@@ -11,7 +11,7 @@
 
     pha             // Preserve the Accumulator
     lda VERACTRL    // load the CTRL Register
-    and #%11111110  // Preserver the Bits we dont want to Change
+    and #%11111110  // Preserve the Bits we dont want to Change
     ora #dataPort   // Apply the Data Port Bit
     sta VERACTRL    // Store back
     pla
