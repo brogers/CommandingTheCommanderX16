@@ -1,7 +1,7 @@
 .cpu _65c02
-#import "Libraries/constants.asm"
-#import "Libraries/petscii.asm"
-#import "Macros/macro.asm"
+#import "constants.asm"
+#import "petscii.asm"
+#import "macro.asm"
 
 BasicUpstart2(Main)
 
@@ -71,5 +71,5 @@ UpdateSpriteLocation:
     Direction: .byte 1
 
 Sprites:
-#import "Assets/ManicMiner.asm"
+#import "ManicMiner.asm"
 _Sprites:

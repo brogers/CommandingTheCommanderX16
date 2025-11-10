@@ -1,8 +1,8 @@
 .cpu _65c02
-#importonce 
+#importonce
 
-#import "Libraries/constants.asm"
-#import "Macros/macro.asm"
+#import "constants.asm"
+#import "macro.asm"
 
 BasicUpstart2(Main)
 
