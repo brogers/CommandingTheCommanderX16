@@ -9,9 +9,15 @@
         "editor.acceptSuggestionOnEnter": "off",
         "editor.fontSize": 22,
         "files.associations": {
-            "*.asm": "kickassembler"
-		},
+          "*.asm": "kickassembler"
+        },
         "kickassembler.assembler.option.outputDirectory": "bin",
+        "kickassembler.assemblerLibraryPaths": [
+            "Libraries",
+            "Macros",
+            "gameLibrary",
+            "Assets"
+        ],
         "terminal.integrated.defaultLocation": "editor",
         "terminal.integrated.fontSize": 18,
         "cSpell.enableFiletypes": [
